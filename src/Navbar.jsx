@@ -12,9 +12,8 @@ function Navbar({ productCount }) {
         />
         <div className="">
           <Link to={"/Cart/"}>
-            {" "}
             <HiShoppingCart className="text-6xl text-primary-default" />
-            <span className="ml-5 ">{productCount}</span>{" "}
+            <span className="ml-5 ">{productCount}</span>
           </Link>
         </div>
       </div>
