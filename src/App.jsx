@@ -34,12 +34,13 @@ function App() {
             path="/ProductDetails/:id"
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
+
+          <Route path="/Cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-      <h>abcd</h>
+
       <Footer />
-      <Cart> </Cart>
     </div>
   );
 }
