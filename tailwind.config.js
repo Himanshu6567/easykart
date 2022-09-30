@@ -30,6 +30,7 @@ module.exports = {
       sky: colors.sky,
       solid: colors.solid,
       yellow: colors.yellow,
+      stone: colors.stone,
     },
   },
   plugins: [],
