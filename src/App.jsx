@@ -43,11 +43,9 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-<<<<<<< Updated upstream
-=======
+
       <Link to={"/LoginPage/"}>LoginPage</Link>
 
->>>>>>> Stashed changes
       <Footer />
     </div>
   );
