@@ -6,6 +6,9 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
 import Cart from "./Cart";
+import LoginPage from "./LoginPage";
+import { Link } from "react-router-dom";
+import Forgot from "./Forgot";
 
 function App() {
   const saveDatatring = localStorage.getItem("my-cart") || "{}";
@@ -34,11 +37,17 @@ function App() {
             path="/ProductDetails/:id"
             element={<ProductDetails onAddToCart={handleAddToCart} />}
           />
-
+          <Route path="/LoginPage" element={<LoginPage />} />
+          <Route path="/Forgot" element={<Forgot />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+<<<<<<< Updated upstream
+=======
+      <Link to={"/LoginPage/"}>LoginPage</Link>
+
+>>>>>>> Stashed changes
       <Footer />
     </div>
   );
